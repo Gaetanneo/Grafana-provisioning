@@ -1,0 +1,19 @@
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://stable-kube-prometeus-sta-prometheus.prometheus:9090/
+    basicAuth: false
+  - name: cloudwatch
+    type: cloudwatch
+    access: proxy
+    orgId: 1
+    url: http://10.0.1231.1231:9091
+    basicAuth: false
+  - name: Alertmanager
+    type: Alertmanager
+    access: proxy
+    orgId: 1
+    url: http://stable-kube-prometeus-sta-alertmanager.prometheus:9093/
+    basicAuth: false 
