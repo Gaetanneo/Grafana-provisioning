@@ -14,8 +14,8 @@ EXPOSE 3000
 ADD ./provisioning/datasources/datasource.yaml /etc/grafana/provisioning/datasources/datasource.yaml
 ADD ./provisioning/dashboards/dashboards.yaml /etc/grafana/provisioning/dashboards/dashboards.yaml
 ADD ./dashboards /var/lib/grafana/dashboards
-ADD ./provioning/alerting/cluster-alertrule.yaml /etc/grafana/provisioning/alerting/cluster-alertrule.yaml
-ADD ./provioning/alerting/contact-point.yaml /etc/grafana/provisioning/alerting/contact-point.yaml
+ADD ./provisioning/alerting/cluster-alertrule.yaml /etc/grafana/provisioning/alerting/cluster-alertrule.yaml
+ADD ./provisioning/alerting/contact-point.yaml /etc/grafana/provisioning/alerting/contact-point.yaml
 ADD ./provisioning/alerting/notification-policies.yaml /etc/grafana/provisioning/alerting/notification-policies.yaml
 
 #COPY ./provisioning/dashboards /etc/grafana/provisioning/dashboards
